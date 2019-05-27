@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Ichlasul"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-27 09:23:47 AM"/>
+        <attribute name="created" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0yNzswOToxNzoyMyBBTTsyNDc5"/>
+        <attribute name="edited" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0yNzswOToyMzo0NyBBTTsxOzI1OTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="teks" type="String" array="False" size=""/>
+            <declare name="indeks" type="Integer" array="False" size=""/>
+            <input variable="teks"/>
+            <assign variable="indeks" expression="0"/>
+            <while expression="indeks &lt; len(teks)">
+                <output expression="char(teks, indeks)" newline="True"/>
+                <assign variable="indeks" expression="indeks + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
