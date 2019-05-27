@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Ichlasul"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-27 09:07:47 AM"/>
+        <attribute name="created" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0yNzswOTowMToxNiBBTTsyNDc0"/>
+        <attribute name="edited" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0yNzswOTowNzo0NyBBTTsxOzI1OTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka" type="Integer" array="False" size=""/>
+            <input variable="angka"/>
+            <if expression="angka = 0">
+                <then>
+                    <output expression="&quot;0&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="angka % 2 = 0">
+                        <then>
+                            <output expression="&quot;Angka Genap&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Angka Ganjil&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
