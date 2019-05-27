@@ -4,28 +4,21 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Ichlasul"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2019-05-27 09:07:47 AM"/>
+        <attribute name="saved" value="2019-05-27 04:15:35 PM"/>
         <attribute name="created" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0yNzswOTowMToxNiBBTTsyNDc0"/>
-        <attribute name="edited" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0yNzswOTowNzo0NyBBTTsxOzI1OTI="/>
+        <attribute name="edited" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0yNzswNDoxNTozNSBQTTs2OzI2MDM="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="angka" type="Integer" array="False" size=""/>
             <input variable="angka"/>
-            <if expression="angka = 0">
+            <if expression="abs(angka) % 2 = 0">
                 <then>
-                    <output expression="&quot;0&quot;" newline="True"/>
+                    <output expression="angka &amp; &quot; adalah angka Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <if expression="angka % 2 = 0">
-                        <then>
-                            <output expression="&quot;Angka Genap&quot;" newline="True"/>
-                        </then>
-                        <else>
-                            <output expression="&quot;Angka Ganjil&quot;" newline="True"/>
-                        </else>
-                    </if>
+                    <output expression="angka &amp; &quot; adalah angka Ganjil&quot;" newline="True"/>
                 </else>
             </if>
         </body>
