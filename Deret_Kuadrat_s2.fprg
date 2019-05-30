@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Ichlasul"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-29 02:51:06 PM"/>
+        <attribute name="created" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0yOTswMjozMjo0NyBQTTsyNDky"/>
+        <attribute name="edited" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0yOTswMjo1MTowNiBQTTsyOzI1OTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, deret" type="Integer" array="False" size=""/>
+            <input variable="N"/>
+            <for variable="deret" start="1" end="N" direction="inc" step="1">
+                <output expression="deret * deret" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Ichlasul"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-30 11:06:07 AM"/>
+        <attribute name="created" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0zMDsxMDo0NjoyMiBBTTsyNDY2"/>
+        <attribute name="edited" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0zMDsxMTowNjowNyBBTTsxOzI1NzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, Perulangan, Hasil" type="Integer" array="False" size=""/>
+            <input variable="N"/>
+            <assign variable="Hasil" expression="1"/>
+            <for variable="Perulangan" start="1" end="N" direction="inc" step="1">
+                <if expression="Perulangan mod 2 == 0">
+                    <then>
+                        <output expression="-Hasil" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="Hasil" newline="True"/>
+                    </else>
+                </if>
+                <assign variable="Hasil" expression="Hasil + 2"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

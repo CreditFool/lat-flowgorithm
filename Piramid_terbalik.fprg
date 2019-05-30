@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Ichlasul"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-29 10:26:57 AM"/>
+        <attribute name="created" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0yODswNzozMzo0MSBQTTsyNDkx"/>
+        <attribute name="edited" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0yOTsxMDoyNjo1NyBBTTs1OzI1OTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tinggi, baris, spasi, bintang" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan tinggi piramid&quot;" newline="True"/>
+            <input variable="tinggi"/>
+            <for variable="baris" start="1" end="tinggi" direction="inc" step="1">
+                <for variable="spasi" start="0" end="baris - 1" direction="inc" step="1">
+                    <output expression="&quot; &quot;" newline="False"/>
+                </for>
+                <for variable="bintang" start="1" end="2 * (tinggi - baris) + 1" direction="inc" step="1">
+                    <output expression="&quot;*&quot;" newline="False"/>
+                </for>
+                <output expression="&quot;&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Ichlasul"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-29 01:42:15 PM"/>
+        <attribute name="created" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0yOTsxMDoyNjo1OSBBTTsyNDgy"/>
+        <attribute name="edited" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0yOTswMTo0MjoxNSBQTTszOzI1OTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, baris, jumlah, jumlahsebelum, temp" type="Integer" array="False" size=""/>
+            <input variable="N"/>
+            <assign variable="baris" expression="1"/>
+            <assign variable="jumlah" expression="N"/>
+            <assign variable="temp" expression="N"/>
+            <assign variable="jumlahsebelum" expression="0"/>
+            <while expression="baris &lt;= 8">
+                <assign variable="baris" expression="baris + 1"/>
+                <output expression="jumlah &amp;&quot;, &quot;" newline="True"/>
+                <assign variable="jumlah" expression="jumlahsebelum + temp"/>
+                <assign variable="jumlahsebelum" expression="temp"/>
+                <assign variable="temp" expression="jumlah"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

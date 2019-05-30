@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Ichlasul"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-29 04:56:16 PM"/>
+        <attribute name="created" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0yOTswMjoxNjoxNCBQTTsyNDg4"/>
+        <attribute name="edited" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0yOTswNDo1NjoxNiBQTTsyOzI2MDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="panjang, deret, beda, i" type="Integer" array="False" size=""/>
+            <input variable="panjang"/>
+            <assign variable="beda" expression="2"/>
+            <assign variable="deret" expression="1"/>
+            <for variable="i" start="1" end="panjang" direction="inc" step="1">
+                <output expression="deret &amp; &quot;, &quot;" newline="False"/>
+                <assign variable="deret" expression="deret + beda"/>
+                <assign variable="beda" expression="beda + 1"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

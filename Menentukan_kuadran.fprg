@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Ichlasul"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-28 05:18:07 AM"/>
+        <attribute name="created" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0yODswNDo1ODoyMyBBTTsyNDgw"/>
+        <attribute name="edited" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0yODswNToxODowNyBBTTsxOzI1ODc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <comment text="Kuadran 1 = x &gt; 0 dan y &gt; 0&#13;&#10;Kuadran 2 = x &lt; 0 dan y &gt; 0&#13;&#10;Kuadran 3 = x &lt; 0 dan y &lt; 0&#13;&#10;Kuadran 4 = x &gt; 0 dan y &lt; 0"/>
+            <if expression="x == 0 &amp;&amp; y == 0">
+                <then>
+                    <output expression="&quot;Koordinat titik tengah (&quot; &amp; x &amp; &quot;,&quot; &amp; y &amp; &quot;)&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="x &gt; 0">
+                        <then>
+                            <if expression="y &gt; 0">
+                                <then>
+                                    <output expression="&quot;Titik (&quot;&amp;x&amp;&quot;,&quot;&amp;y&amp;&quot;) berada di Kuadran 1&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Titik (&quot;&amp;x&amp;&quot;,&quot;&amp;y&amp;&quot;) berada di Kuadran 4&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="y &gt; 0">
+                                <then>
+                                    <output expression="&quot;Titik (&quot;&amp;x&amp;&quot;,&quot;&amp;y&amp;&quot;) berada di Kuadran 2&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Titik (&quot;&amp;x&amp;&quot;,&quot;&amp;y&amp;&quot;) berada di Kuadran 3&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

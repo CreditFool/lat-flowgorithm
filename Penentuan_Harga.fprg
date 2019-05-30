@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Ichlasul"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-28 06:09:46 AM"/>
+        <attribute name="created" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0yODswNToyMzoxOCBBTTsyNDc3"/>
+        <attribute name="edited" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0yODswNjowOTo0NiBBTTszOzI1OTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Kuantitas, harga" type="Integer" array="False" size=""/>
+            <input variable="Kuantitas"/>
+            <if expression="Kuantitas &gt; 5">
+                <then>
+                    <if expression="Kuantitas &gt; 12">
+                        <then>
+                            <if expression="Kuantitas &gt; 20">
+                                <then>
+                                    <if expression="Kuantitas &gt; 40">
+                                        <then>
+                                            <if expression="Kuantitas &gt; 99">
+                                                <then>
+                                                    <assign variable="harga" expression="58000"/>
+                                                    <output expression="&quot;Dengan pembelian sebanyak &quot; &amp; Kuantitas &amp;&quot; maka per unit dihargai &quot;&amp; harga" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <assign variable="harga" expression="65000"/>
+                                                    <output expression="&quot;Dengan pembelian sebanyak &quot; &amp; Kuantitas &amp;&quot; maka per unit dihargai &quot;&amp; harga" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <assign variable="harga" expression="68000"/>
+                                            <output expression="&quot;Dengan pembelian sebanyak &quot; &amp; Kuantitas &amp;&quot; maka per unit dihargai &quot;&amp; harga" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <assign variable="harga" expression="72000"/>
+                                    <output expression="&quot;Dengan pembelian sebanyak &quot; &amp; Kuantitas &amp;&quot; maka per unit dihargai &quot;&amp; harga" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="harga" expression="75000"/>
+                            <output expression="&quot;Dengan pembelian sebanyak &quot; &amp; Kuantitas &amp;&quot; maka per unit dihargai &quot;&amp; harga" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <assign variable="harga" expression="78000"/>
+                    <output expression="&quot;Dengan pembelian sebanyak &quot; &amp; Kuantitas &amp;&quot; maka per unit dihargai &quot;&amp; harga" newline="True"/>
+                </else>
+            </if>
+            <declare name="total" type="Integer" array="False" size=""/>
+            <assign variable="total" expression="Kuantitas * harga"/>
+            <output expression="&quot;Total seluruh pembelian adalah sebesar &quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

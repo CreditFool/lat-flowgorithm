@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Ichlasul"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-27 05:46:22 PM"/>
+        <attribute name="created" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0yNzswNDo1NDo0MiBQTTsyNDkx"/>
+        <attribute name="edited" value="SWNobGFzdWw7QlVMUUk7MjAxOS0wNS0yNzswNTo0NjoyMiBQTTsxOzI1OTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tanggal, bulan, tahun" type="Integer" array="False" size=""/>
+            <input variable="tanggal"/>
+            <input variable="bulan"/>
+            <input variable="tahun"/>
+            <if expression="bulan == 1">
+                <then>
+                    <assign variable="bulan" expression="13"/>
+                    <assign variable="tahun" expression="tahun - 1"/>
+                </then>
+                <else>
+                    <if expression="bulan == 2">
+                        <then>
+                            <assign variable="bulan" expression="14"/>
+                            <assign variable="tahun" expression="tahun - 1"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+            <declare name="TahunDalamAbad, Abad, KodeHari" type="Integer" array="False" size=""/>
+            <assign variable="TahunDalamAbad" expression="Tahun % 100"/>
+            <assign variable="Abad" expression="Tahun / 100"/>
+            <assign variable="KodeHari" expression="(tanggal + int(13 * (bulan + 1) / 5) + TahunDalamAbad + int(TahunDalamAbad / 4) + int(Abad / 4) - 2 * abad) % 7"/>
+            <output expression="KodeHari" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
